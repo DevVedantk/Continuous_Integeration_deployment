@@ -15,6 +15,10 @@ app.get("/users",(req,res)=>{
     res.send("this is backend user page")
 })
 
+app.get("/test",(req,res)=>{
+ res.send("again")
+})
+
 app.get("/signIn",(req,res)=>{
   res.send("signIn page");
 })
