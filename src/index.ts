@@ -19,6 +19,9 @@ app.get("/test",(req,res)=>{
  res.send("again")
 })
 
+app.get("/test2",(req,res)=>{
+    res.send("again 2")
+   })
 app.get("/signIn",(req,res)=>{
   res.send("signIn page");
 })
