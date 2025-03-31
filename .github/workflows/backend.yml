@@ -24,6 +24,8 @@ jobs:
           ssh -i ~/ssh_key ubuntu@${{ secrets.SERVER_IP }} << 'EOF'
             cd /home/ubuntu/Continuous_Integeration_deployment
             git pull origin main
+            nvm install --lts
+            npm install -g pm2
             npm install
             npm run build
             pm2 restart all
