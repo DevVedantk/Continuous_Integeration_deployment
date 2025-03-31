@@ -7,6 +7,10 @@ app.get("/",(req,res)=>{
     res.send("Hello World");
 })
 
+app.get("/cicd",(req,res)=>{
+   res.send("ci cd is working !!!")
+})
+
 app.get("/users",(req,res)=>{
     res.send("this is backend user page")
 })
