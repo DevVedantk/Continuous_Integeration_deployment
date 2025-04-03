@@ -7,8 +7,8 @@ app.get("/",(req,res)=>{
     res.send("Hello World");
 })
 
-app.get("/cicd",(req,res)=>{
-   res.send("ci cd is working !!!")
+app.get("/testing",(req,res)=>{
+    res.send("testing route today")
 })
 
 app.get("/users",(req,res)=>{
