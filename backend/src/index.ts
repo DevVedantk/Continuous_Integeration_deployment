@@ -15,6 +15,10 @@ app.get("/disk",(req,res)=>{
     res.send("dikshant");
 })
 
+app.get("/final",(req,res)=>{
+    res.send("final testing...")
+})
+
 
 app.get("/ved",(req,res)=>{
     res.send("working vedant bro")
