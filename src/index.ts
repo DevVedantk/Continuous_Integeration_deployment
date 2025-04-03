@@ -11,6 +11,10 @@ app.get("/testing",(req,res)=>{
     res.send("testing route today")
 })
 
+app.get("/ved",(req,res)=>{
+    res.send("working vedant bro")
+})
+
 app.get("/users",(req,res)=>{
     res.send("this is backend user page")
 })
