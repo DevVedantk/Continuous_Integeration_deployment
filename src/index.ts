@@ -11,6 +11,11 @@ app.get("/testing",(req,res)=>{
     res.send("testing route today")
 })
 
+app.get("/disk",(req,res)=>{
+    res.send("dikshant");
+})
+
+
 app.get("/ved",(req,res)=>{
     res.send("working vedant bro")
 })
