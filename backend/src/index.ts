@@ -19,6 +19,9 @@ app.get("/final",(req,res)=>{
     res.send("final testing...")
 })
 
+app.get("/shr",(req,res)=>{
+    res.send("ho gaya reh!!")
+})
 
 app.get("/ved",(req,res)=>{
     res.send("working vedant bro")
