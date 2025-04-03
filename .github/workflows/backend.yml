@@ -31,4 +31,10 @@ jobs:
             npm install
             npm run build
             pm2 restart all
+
+            cd /home/ubuntu/Continuous_Integeration_deployment/frontend/web
+            git pull origin main
+            npm install
+            npm run build
+            pm2 restart all
           EOF
