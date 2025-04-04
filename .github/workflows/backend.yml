@@ -27,19 +27,18 @@ jobs:
             [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
             cd /home/ubuntu/Continuous_Integeration_deployment/backend
-            git stash
-            git pull origin main
-            git stash pop || echo "No stash to apply"
+            git add .
+            git commit -m "Auto-commit before pulling latest changes" || echo "No changes to commit"
+            git pull origin main --rebase
             npm install
             npm run build
             pm2 restart all
 
             cd /home/ubuntu/Continuous_Integeration_deployment/frontend/web
-            git stash
-            git pull origin main
-            git stash pop || echo "No stash to apply"
+            git add .
+            git commit -m "Auto-commit before pulling latest changes" || echo "No changes to commit"
+            git pull origin main --rebase
             npm install
             npm run build
             pm2 restart all
           EOF
-
