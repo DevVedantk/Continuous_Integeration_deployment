@@ -2,9 +2,8 @@
 function App() {
   
 
-  return <div className="h-screen w-full bg-blue-800">
-   good morning bro!!!
-   bhai itna time lag gaya yaar iise
+  return <div className="h-screen w-full bg-pink-800">
+  everything is working....
    <input type="text" placeholder="hello" />
   </div>
 

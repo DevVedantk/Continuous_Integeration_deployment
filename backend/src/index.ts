@@ -12,6 +12,11 @@ app.get("/logout",(req,res)=>{
     res.send("logout")
 })
 
+
+app.get("/even",(req,res)=>{
+    res.send("good evening...")
+})
+
 app.get("/test",(req,res)=>{
     res.send("testing.... Again!!!");
 })
